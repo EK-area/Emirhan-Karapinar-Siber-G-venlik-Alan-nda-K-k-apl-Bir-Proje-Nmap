@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siber v2", "Siber v2\Siber v2.csproj", "{80188167-1CC4-4C5C-9D4A-83251DB452C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80188167-1CC4-4C5C-9D4A-83251DB452C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80188167-1CC4-4C5C-9D4A-83251DB452C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80188167-1CC4-4C5C-9D4A-83251DB452C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80188167-1CC4-4C5C-9D4A-83251DB452C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AF0C9CE-0E85-4C67-AE06-8CFF010A8DAF}
+	EndGlobalSection
+EndGlobal

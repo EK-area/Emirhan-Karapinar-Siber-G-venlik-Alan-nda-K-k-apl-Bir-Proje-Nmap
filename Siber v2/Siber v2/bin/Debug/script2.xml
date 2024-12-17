@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1588683534" profile_name="" xmloutputversion="1.04" scanner="nmap" version="7.80" startstr="Tue May 05 15:58:54 2020" args="nmap -p 80 --script http-sitemap-generator testphp.vulnweb.com"><scaninfo services="80" protocol="tcp" numservices="1" type="syn"></scaninfo><verbose level="0"></verbose><debugging level="0"></debugging><script id="http-sitemap-generator" output="&#xA;  Directory structure:&#xA;    /&#xA;      Other: 2; css: 1; php: 9&#xA;    /AJAX/&#xA;      php: 1&#xA;    /Flash/&#xA;      swf: 1&#xA;    /Mod_Rewrite_Shop/&#xA;      Other: 1&#xA;    /hpp/&#xA;      Other: 1&#xA;    /images/&#xA;      gif: 1&#xA;  Longest directory structure:&#xA;    Depth: 1&#xA;    Dir: /images/&#xA;  Total files found (by extension):&#xA;    Other: 4; css: 1; gif: 1; php: 10; swf: 1&#xA;"><output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-05 15:58 Türkiye Standart Saati
+Nmap scan report for testphp.vulnweb.com (176.28.50.165)
+Host is up (0.057s latency).
+rDNS record for 176.28.50.165: rs202995.rs.hosteurope.de
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 2; css: 1; php: 8
+|     /AJAX/
+|       php: 1
+|     /Flash/
+|       swf: 1
+|     /Mod_Rewrite_Shop/
+|       Other: 1
+|     /hpp/
+|       Other: 1
+|     /images/
+|       gif: 1
+|   Longest directory structure:
+|     Depth: 1
+|     Dir: /images/
+|   Total files found (by extension):
+|_    Other: 4; css: 1; gif: 1; php: 9; swf: 1
+
+Nmap done: 1 IP address (1 host up) scanned in 4.86 seconds
+</output></script><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="176.28.50.165"></address><hostnames><hostname type="user" name="testphp.vulnweb.com"></hostname><hostname type="PTR" name="rs202995.rs.hosteurope.de"></hostname></hostnames><ports><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="52"></state><service method="table" conf="3" name="http"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><runstats><finished timestr="Tue May 05 15:58:59 2020" time="1588683539"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

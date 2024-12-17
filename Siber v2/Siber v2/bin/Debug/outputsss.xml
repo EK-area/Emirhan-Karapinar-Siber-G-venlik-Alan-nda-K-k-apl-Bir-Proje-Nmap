@@ -1,0 +1,298 @@
+<script id="http-sql-injection" output="&#xA;  Directory structure:&#xA;    /&#xA;      Other: 2; css: 1; php: 9&#xA;    /AJAX/&#xA;      php: 1&#xA;    /Flash/&#xA;      swf: 1&#xA;    /Mod_Rewrite_Shop/&#xA;      Other: 1&#xA;    /hpp/&#xA;      Other: 1&#xA;    /images/&#xA;      gif: 1&#xA;  Longest directory structure:&#xA;    Depth: 1&#xA;    Dir: /images/&#xA;  Total files found (by extension):&#xA;    Other: 4; css: 1; gif: 1; php: 10; swf: 1&#xA;">
+  <output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-06 14:15 TÃ¼rkiye Standart Saati
+
+Nmap scan report for testphp.vulnweb.com (176.28.50.165)
+
+Host is up (0.063s latency).
+
+rDNS record for 176.28.50.165: rs202995.rs.hosteurope.de
+
+Not shown: 989 closed ports
+
+PORT     STATE    SERVICE
+
+21/tcp   open     ftp
+
+22/tcp   filtered ssh
+
+25/tcp   filtered smtp
+
+80/tcp   open     http
+
+| http-sql-injection: 
+
+|   Possible sqli for queries:
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/listproducts.php?cat=4%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/listproducts.php?cat=2%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/listproducts.php?cat=3%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/listproducts.php?cat=1%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/showimage.php?file=%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/artists.php?artist=2%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/artists.php?artist=3%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/artists.php?artist=1%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/showimage.php?file=.%2fpictures%2f6.jpg%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/showimage.php?file=.%2fpictures%2f6.jpg%27%20OR%20sqlspider&amp;size=160
+
+|     http://testphp.vulnweb.com:80/product.php?pic=6%27%20OR%20sqlspider
+
+|     http://testphp.vulnweb.com:80/artists.php?artist=1%27%20OR%20sqlspider
+
+|_    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider
+
+106/tcp  open     pop3pw
+
+110/tcp  open     pop3
+
+143/tcp  open     imap
+
+465/tcp  open     smtps
+
+993/tcp  open     imaps
+
+995/tcp  open     pop3s
+
+8443/tcp open     https-alt
+
+
+
+Nmap done: 1 IP address (1 host up) scanned in 14.01 seconds
+
+</output>
+</script>
+
+<script id="http-sitemap-generator" output="&#xA;  Directory structure:&#xA;    /&#xA;      Other: 2; css: 1; php: 9&#xA;    /AJAX/&#xA;      php: 1&#xA;    /Flash/&#xA;      swf: 1&#xA;    /Mod_Rewrite_Shop/&#xA;      Other: 1&#xA;    /hpp/&#xA;      Other: 1&#xA;    /images/&#xA;      gif: 1&#xA;  Longest directory structure:&#xA;    Depth: 1&#xA;    Dir: /images/&#xA;  Total files found (by extension):&#xA;    Other: 4; css: 1; gif: 1; php: 10; swf: 1&#xA;">
+  <output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-05 15:58 TÃ¼rkiye Standart Saati
+
+Nmap scan report for testphp.vulnweb.com (176.28.50.165)
+
+Host is up (0.057s latency).
+
+rDNS record for 176.28.50.165: rs202995.rs.hosteurope.de
+
+
+
+PORT   STATE SERVICE
+
+80/tcp open  http
+
+| http-sitemap-generator: 
+
+|   Directory structure:
+
+|     /
+
+|       Other: 2; css: 1; php: 8
+
+|     /AJAX/
+
+|       php: 1
+
+|     /Flash/
+
+|       swf: 1
+
+|     /Mod_Rewrite_Shop/
+
+|       Other: 1
+
+|     /hpp/
+
+|       Other: 1
+
+|     /images/
+
+|       gif: 1
+
+|   Longest directory structure:
+
+|     Depth: 1
+
+|     Dir: /images/
+
+|   Total files found (by extension):
+
+|_    Other: 4; css: 1; gif: 1; php: 9; swf: 1
+
+
+
+Nmap done: 1 IP address (1 host up) scanned in 4.86 seconds
+
+</output>
+</script>
+
+<script id="http-php-version" output="Versions from logo query (less accurate): 5.3.0 - 5.3.29, 5.4.0 - 5.4.45&#xA;Versions from credits query (more accurate): 5.3.9 - 5.3.29&#xA;Version from header x-powered-by: PHP/5.3.10-1~lucid+2uwsgi2">
+  <output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-05 16:01 TÃ¼rkiye Standart Saati
+
+Nmap scan report for testphp.vulnweb.com (176.28.50.165)
+
+Host is up (0.066s latency).
+
+rDNS record for 176.28.50.165: rs202995.rs.hosteurope.de
+
+
+
+PORT   STATE SERVICE
+
+80/tcp open  http
+
+| http-php-version: Versions from logo query (less accurate): 5.3.0 - 5.3.29, 5.4.0 - 5.4.45
+
+| Versions from credits query (more accurate): 5.3.9 - 5.3.29
+
+|_Version from header x-powered-by: PHP/5.3.10-1~lucid+2uwsgi2
+
+
+
+Nmap done: 1 IP address (1 host up) scanned in 2.22 seconds
+
+</output>
+</script>
+
+<script id="ssl-ccs-injection" />
+<output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-06 14:17 TÃ¼rkiye Standart Saati
+
+NSE: [ssl-ccs-injection] No response from server: TIMEOUT
+
+Nmap scan report for testphp.vulnweb.com (176.28.50.165)
+
+Host is up (0.080s latency).
+
+rDNS record for 176.28.50.165: rs202995.rs.hosteurope.de
+
+Not shown: 989 closed ports
+
+PORT     STATE    SERVICE
+
+21/tcp   open     ftp
+
+22/tcp   filtered ssh
+
+25/tcp   filtered smtp
+
+80/tcp   open     http
+
+106/tcp  open     pop3pw
+
+110/tcp  open     pop3
+
+143/tcp  open     imap
+
+465/tcp  open     smtps
+
+| ssl-ccs-injection: 
+
+|   VULNERABLE:
+
+|   SSL/TLS MITM vulnerability (CCS Injection)
+
+|     State: VULNERABLE
+
+|     Risk factor: High
+
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+
+|       does not properly restrict processing of ChangeCipherSpec messages,
+
+|       which allows man-in-the-middle attackers to trigger use of a zero
+
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+
+|       consequently hijack sessions or obtain sensitive information, via
+
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+
+|           
+
+|     References:
+
+|       http://www.cvedetails.com/cve/2014-0224
+
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+
+|_      http://www.openssl.org/news/secadv_20140605.txt
+
+993/tcp  open     imaps
+
+| ssl-ccs-injection: 
+
+|   VULNERABLE:
+
+|   SSL/TLS MITM vulnerability (CCS Injection)
+
+|     State: VULNERABLE
+
+|     Risk factor: High
+
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+
+|       does not properly restrict processing of ChangeCipherSpec messages,
+
+|       which allows man-in-the-middle attackers to trigger use of a zero
+
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+
+|       consequently hijack sessions or obtain sensitive information, via
+
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+
+|           
+
+|     References:
+
+|       http://www.cvedetails.com/cve/2014-0224
+
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+
+|_      http://www.openssl.org/news/secadv_20140605.txt
+
+995/tcp  open     pop3s
+
+| ssl-ccs-injection: 
+
+|   VULNERABLE:
+
+|   SSL/TLS MITM vulnerability (CCS Injection)
+
+|     State: VULNERABLE
+
+|     Risk factor: High
+
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+
+|  

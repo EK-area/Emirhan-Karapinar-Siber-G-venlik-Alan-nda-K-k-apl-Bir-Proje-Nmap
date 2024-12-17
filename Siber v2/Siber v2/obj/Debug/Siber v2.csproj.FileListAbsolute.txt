@@ -1,0 +1,6 @@
+C:\Users\EMİRHAN\Source\Repos\Siber v2\Siber v2\bin\Debug\Siber v2.exe.config
+C:\Users\EMİRHAN\Source\Repos\Siber v2\Siber v2\bin\Debug\Siber v2.exe
+C:\Users\EMİRHAN\Source\Repos\Siber v2\Siber v2\bin\Debug\Siber v2.pdb
+C:\Users\EMİRHAN\Source\Repos\Siber v2\Siber v2\obj\Debug\Siber v2.csprojAssemblyReference.cache
+C:\Users\EMİRHAN\Source\Repos\Siber v2\Siber v2\obj\Debug\Siber v2.exe
+C:\Users\EMİRHAN\Source\Repos\Siber v2\Siber v2\obj\Debug\Siber v2.pdb

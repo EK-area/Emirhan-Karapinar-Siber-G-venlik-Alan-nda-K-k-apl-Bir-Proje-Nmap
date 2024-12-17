@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1588683908" profile_name="" xmloutputversion="1.04" scanner="nmap" version="7.80" startstr="Tue May 05 16:05:08 2020" args="nmap -p 80 --script http-csrf testphp.vulnweb.com"><scaninfo services="80" protocol="tcp" numservices="1" type="syn"></scaninfo><verbose level="0"></verbose><debugging level="0"></debugging><script scriptName='http-csrf' target='testphp.vulnweb.com'><output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-05 16:05 Türkiye Standart Saati
+Nmap scan report for testphp.vulnweb.com (176.28.50.165)
+Host is up (0.062s latency).
+rDNS record for 176.28.50.165: rs202995.rs.hosteurope.de
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=testphp.vulnweb.com
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://testphp.vulnweb.com:80/
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/login.php
+|     Form id: 
+|     Form action: userinfo.php
+|     
+|     Path: http://testphp.vulnweb.com:80/login.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/guestbook.php
+|     Form id: 
+|     Form action: 
+|     
+|     Path: http://testphp.vulnweb.com:80/guestbook.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/categories.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/disclaimer.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/search.php?test=query
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/artists.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/index.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/cart.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/userinfo.php
+|     Form id: 
+|     Form action: userinfo.php
+|     
+|     Path: http://testphp.vulnweb.com:80/userinfo.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/signup.php
+|     Form id: 
+|     Form action: /secured/newuser.php
+|     
+|     Path: http://testphp.vulnweb.com:80/signup.php
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/listproducts.php?cat=4
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/listproducts.php?cat=3
+|     Form id: 
+|     Form action: search.php?test=query
+|     
+|     Path: http://testphp.vulnweb.com:80/listproducts.php?cat=2
+|     Form id: 
+|_    Form action: search.php?test=query
+
+Nmap done: 1 IP address (1 host up) scanned in 5.07 seconds
+</output></script><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="176.28.50.165"></address><hostnames><hostname type="user" name="testphp.vulnweb.com"></hostname><hostname type="PTR" name="rs202995.rs.hosteurope.de"></hostname></hostnames><ports><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="53"></state><service method="table" conf="3" name="http"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><runstats><finished timestr="Tue May 05 16:05:12 2020" time="1588683912"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
